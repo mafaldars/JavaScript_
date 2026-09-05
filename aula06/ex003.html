@@ -22,12 +22,20 @@
         /* comentário
         de várias linhas */
 
-        var n1 = Number(window.prompt ('Escreva um número: '))
-        var n2 = Number(window.prompt ('Escreva outro número: '))
-        var soma = n1 + n2
-        window.alert (`A soma entre ${n1} e ${n2} é igual a ${soma}`) // concatenação
-        // number + number para adição
-        // string + string para concatenação
+        var n1 = Number.parseInt(window.prompt ('Escreva um número: ')) // prompt retorna como String - característica do comando
+        var n2 = Number.parseInt(window.prompt ('Escreva outro número: ')) // prompt retorna como String - característica do comando
+        var n3 = Number.parseFloat(window.prompt ('Escreva outro número: '))
+        var n4 = Number.parseFloat(window.prompt('Escreva outro número: '))
+        var n5 = Number(window.prompt('Escreva o último número: ')) // Number faz a conversão sozinho - inteiro ou real - 5.5 por ex
+        var soma = n1 + n2 + n3 + n4 + n5
+        window.alert (`A soma entre ${n1}, ${n2}, ${n3}, ${n4} e ${n5} é igual a ${soma}`) // concatenação
+        // (number + number) para adição
+        // (string + string) para concatenação
+        /*
+        Conversão de String para Number:
+        Number.parseInt(n) - conversão de um número para um número inteiro
+        Number.parseFloat(n) - Floating Point - conversão para números decimais 
+        */
     </script>
    
 </body>
