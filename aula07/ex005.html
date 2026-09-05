@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores JS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    ${Operadores JS}
+
+    Aritméticos:
+           5 + 2 == 7
+           5 - 2 == 3
+           5 * 2 == 10
+           5 / 2 == 2.5
+           5 % 2 == 1 <!-- resto da divisão inteira -->
+           5 ** 2 == 25 <!-- potência -->
+
+    Atribuição:
+
+    Relacionais
+    Lógicos 
+    Ternário
+
+    PRECEDÊNCIA de Operadores
+    5 + 3 / 2 == 6.5 <!-- a divisão é efetuada em primeiro lugar e só depois a soma -->
+    9 % 2 == 1 <!-- resto da divisão 9 por 2 | a divisão inteira | 9 / 2  == 4 | 2 * 4 == 8 | para 9 resta 1 -->
+    9 / 2 == 4.5 
+    (5 + 3) / 2 == 4
+
+    ORDEM DE PRECEDÊNCIA de Operadores
+    () parênteses
+    * potência 
+    * / % multiplicação | divisão | resto da divisão - mesma ordem de precedência | da esquerda para a direita
+    + - soma e subtração
+
+    Auto simples:
+    var a = 5 + 3 | guardado o 8 na var a
+    var b = a % 5 | 8 / 5 dá 1 | 5 * 1 dá 5 | para 8 dá 3
+    var c = 5 * b ** 2 | 3 ao quadrado 9 | 5 * 9 == 45
+    var d = 10 - a / 2 | 8 / 2 == 4 | 10 - 4 == 6  
+    var e = 6 * 2 / d | 12 / 6 == 2
+    var f = b % e + 4 | 3 / 2 == 1 | 4 / 2 == 2 | 2 + 1 == 3
+
+    Auto-atribuição: 
+    var n = 3
+    n = n + 4 | n passa a valer 7 
+    n = n - 5 | n passa a valer 2
+    n = n * 4 | n passa a valer 8
+    n = n / 2 | n passa a valer 4
+    n = n ** 2 | n passa a valer 16
+    n = n % 5 | n passa a valer 1 | resto da divisão 16 / 5 dá 3 | 3 * 5 dá 15 | para 16 vai 1 
+
+    SIMPLIFICAR:
+    se a mesma variável receber a si mesma podemos utilizar o exemplo abaixo, mas se a var receber x (exemplo) não da. 
+    n += 4
+    n -= 5
+    n *= 4
+    n /= 2
+    n **= 2
+    n %= 5
+
+    INCREMENTO
+    var x = 5
+    x = x + 1 | x += 1
+    x = x - 3 | x -= 3
+
+    
+
+
+    <script>
+
+    </script>
+    
+</body>
+</html>
