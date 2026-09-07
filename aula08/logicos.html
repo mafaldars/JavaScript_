@@ -7,19 +7,37 @@
 </head>
 <body>
 
-    ! negação true or false | uma coisa que não é verdadeira é falsa | uma coisa que não é falsa é verdadeira
-    && conjunção true or false | só se os dois forem verdadeiros | eu quero uma caneta azul e vermelha | se eu consegui uma ou outra é falso | o objetivo é ter as duas canetas (resultados)
-    || disjunção true or false | basta que um dos resultados seja verdadeiro - caneta azul ou vermelha 
+    ! negação true or false | uma coisa que não é verdadeira é falsa | uma coisa que não é falsa é verdadeira | eu quero uma caneta mas não pode ser azul, posso receber qualquer cor menos azul
 
+    && conjunção true or false | só se os dois forem verdadeiros | eu quero uma caneta azul e vermelha | se eu consegui uma ou outra é falso | o objetivo é ter as duas canetas (resultados)
+
+    || disjunção true or false | basta que um dos resultados seja verdadeiro - receber a caneta azul ou a vermelha 
+
+    <!-- Primeiro o operador Aritmético () * % / ** + - 
+    Segundo o operador Relacionais < > = == <= >= !=
+    Terceiro o operador Lógico - ! && || -->
+
+    Se numa mesma expressão eu tiver um && (e) e um || (ou) e um ! (não), a ordem de execução é sempre: ! (não) && (e) e || (ou)
+
+    PRECEDÊNCIA 
     Primeiro o operador Aritmético () * % / ** + - 
     Segundo o operador Relacionais < > = == <= >= !=
-    Terceiro o operador Lógico - ! && ||
+    Terceiro o operador Lógico ! && ||
 
     TERNÁRIO
     ? 
     :
-    teste?true:false
+    teste?true:false | dentro da mesma expressão
+
+    média >= 7?'Aprovado':'Reprovado'
+
+    var media = 5.5
+    media > 7?'Aprovado':'Reprovado'
+    'Reprovado'
+    media += 3 == 8.5
+    media > 7?'Aprovado':'Reprovado'
+    'Aprovado'
     
-    
+
 </body>
 </html>
