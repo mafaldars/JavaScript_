@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-            font-size: small;
+            font-size: medium;
             color: white;
             background-color: rgb(194, 103, 70);
             
@@ -18,7 +18,7 @@
     <h1>Iniciar estudos com o DOM</h1>
     <p>Aqui vai o resultado.</p>
     <p>Aprender a usar o DOM em JavaScript.</p>
-    <div>Clique aqui</div>
+    <div id="msg">Clique aqui</div>
 
     <p>DOM é o modelo de objetos para documentos. É um conjunto de objetos dentro do navegador para dar acessos aos componentes internos dentro do site.</p>
 
@@ -32,14 +32,45 @@
         <br>
         history (guarda de onde veio para onde vai) <br>
         <br>
+        Dentro de document:
         html parent (parent do head and child. Child de document) <br>
         head child (meta title)<br>
         body child (h1 p div)<br>
     </p> 
 
+    <p>
+        Podemos navegar dentro do DOM da maneira que achamos melhor. Existem várias maneiras de navegar entre os elementos.
+    </p>
+    <p>
+        MÉTODOS DE ACESSO AO DOM <br>
+        por Marca (tags) | getElementsByTagName()<br>
+        por ID | getElementById() <br>
+        por Nome | getElementsByName <br>
+        por Classe | getElementsByClassName<br>
+        por Seletor (CSS)
+    </p>
+
 
     <script>
-        window.document.write('Hello, World.')
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        /*
+        var mensagem = window.document.getElementById('msg')
+        mensagem.style.background = ' black'
+        mensagem.innerText = 'Estou a aguardar'
+        */
+ 
+        var d = window.document.querySelector('div#msg')
+        d.style.color = 'black'
+
+        var mensagem = window.document.getElementsByName('msg')[0]
+        mensagem.innerText = ('Olá')
+
+
+        
+        
+
+        
 
     </script>
 
