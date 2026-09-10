@@ -25,6 +25,7 @@
 
     </div>
 
+
     <p>
         <strong>EVENTOS DOM NO MOUSE</strong> <br>
         mouseenter | chega dentro da div<br>
@@ -36,8 +37,33 @@
     </p>
 
     <p>
-        FUNÇÃO é um conjunto de linhas que vão ser executadas quando o evento ocorrer.
+        function ação(param){
+            é um conjunto de linhas que vão ser executadas quando o evento ocorrer.
+
+        } 
     </p>
+
+    <script>
+        var area = window.document.getElementById('area')
+        addEventListener('click', clicar)
+        addEventListener('mouseenter', entrar)
+        addEventListener('mouseout', sair)
+
+        function clicar() {
+            area.innerText = 'Clicou!'
+            area.style.background = 'red'
+        }
+
+        function entrar() {
+            area.innerText = 'Entrou!'
+
+        }
+
+        function sair() {
+            area.innerText = 'Saiu!'
+            area.style.background = 'green'
+        }
+    </script>
     
 </body>
 </html>
