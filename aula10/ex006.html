@@ -68,23 +68,25 @@
 
     <script>
         var area = window.document.getElementById('area')
-        addEventListener('click', clicar)
-        addEventListener('mouseenter', entrar)
-        addEventListener('mouseout', sair)
+        area.addEventListener('click', clicar) 
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', sair)
+
 
         function clicar() {
-            area.innerText = 'Clicou!'
-            area.style.background = 'red'
+            area.innerText = ('CLICOU!')
+            area.style.background = 'blue'
+
         }
 
         function entrar() {
-            area.innerText = 'Entrou!'
-
+            area.innerHTML = ('ENTROU!')
+            area.style.background = 'green'
         }
 
         function sair() {
-            area.innerText = 'Saiu!'
-            area.style.background = 'green'
+            area.innerText = ('SAIU!')
+            area.style.background = 'red'
         }
     </script>
     
