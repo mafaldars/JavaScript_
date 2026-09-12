@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Em que país mora?</h1>
+
+    Em que país mora? <input type="text" name="pais" id="pais"> Mora em ... 
+
+    <input type="button" value="Clicar" onclick="calcular()">
+
+    <div id="res">
+        Resultado
+    </div>
+
+
+
+    <script>
+        function calcular() {
+            var paises = window.document.querySelector('input#pais')
+            var res = window.document.querySelector('div#res')
+            var pais = String.paises.value
+
+        }
+    </script>
+    
+</body>
+</html>
