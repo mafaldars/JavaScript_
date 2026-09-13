@@ -15,7 +15,7 @@
 
     <h1>Em que país mora?</h1>
 
-    Em que país mora? <input type="text" name="pais" id="pais"> Mora em ... 
+    Mora em: <input type="text" name="pais" id="pais"> Mora em ... 
 
     <input type="button" value="Clicar" onclick="calcular()">
 
@@ -29,7 +29,8 @@
         function calcular() {
             var paises = window.document.querySelector('input#pais')
             var res = window.document.querySelector('div#res')
-            var pais = String.paises.value
+            var pais = String(paises.value)
+            res.innerHTML = (`Você mora em ${pais}`)
 
         }
     </script>
